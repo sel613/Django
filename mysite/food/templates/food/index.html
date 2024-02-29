@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Items Available</h1>
+    <ul>
+        {% for item in item_list %}
+            <li>{{ item.id }} -- {{  item.item_name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
