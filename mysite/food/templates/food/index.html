@@ -9,7 +9,7 @@
     <h1>Items Available</h1>
     <ul>
         {% for item in item_list %}
-            <li>{{ item.id }} -- {{  item.item_name }}</li>
+            <li><a href="/food/{{item.id}}">{{ item.id }} -- {{  item.item_name }}</li></a>
         {% endfor %}
     </ul>
 </body>

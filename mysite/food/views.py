@@ -18,3 +18,11 @@ def item(request):
 
 def saveditem(request):
     return HttpResponse("<h1>These are your saved item</h1>")
+
+def detail(request, item_id):
+    item = Item.objects.get(id=item_id)
+    context ={
+        'item':item,
+    }
+    # return HttpResponse("Item Details " % item)
+    return render(request,'food/detail.html',context)
